@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata>
+  <groupId>javacup</groupId>
+  <artifactId>javacup</artifactId>
+  <versioning>
+    <latest>0.10k</latest>
+    <release>0.10k</release>
+    <versions>
+      <version>0.10k</version>
+    </versions>
+  </versioning>
+</metadata>

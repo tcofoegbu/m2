@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+  <groupId>org.andromda.bootstrap.templateengines</groupId>
+  <artifactId>andromda-templateengine-velocity</artifactId>
+  <version>3.3-SNAPSHOT</version>
+</metadata>

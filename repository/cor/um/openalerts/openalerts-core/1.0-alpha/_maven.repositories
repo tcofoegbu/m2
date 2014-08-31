@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Fri Dec 31 15:38:50 WAT 2010
+openalerts-core-1.0-alpha.pom>=
+openalerts-core-1.0-alpha-client.jar>=
+openalerts-core-1.0-alpha.jar>=

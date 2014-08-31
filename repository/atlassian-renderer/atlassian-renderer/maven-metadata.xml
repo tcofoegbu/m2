@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata>
+  <groupId>atlassian-renderer</groupId>
+  <artifactId>atlassian-renderer</artifactId>
+  <versioning>
+    <latest>2007.01.17</latest>
+    <release>2007.01.17</release>
+    <versions>
+      <version>2007.01.17</version>
+    </versions>
+  </versioning>
+</metadata>

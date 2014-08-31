@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata>
+  <groupId>httpcomponents-httpcore</groupId>
+  <artifactId>jakarta-httpcore</artifactId>
+  <version>4.0-alpha4</version>
+</metadata>

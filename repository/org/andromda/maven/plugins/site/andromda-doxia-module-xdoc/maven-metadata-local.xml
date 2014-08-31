@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+  <groupId>org.andromda.maven.plugins.site</groupId>
+  <artifactId>andromda-doxia-module-xdoc</artifactId>
+  <version>3.3-SNAPSHOT</version>
+  <versioning>
+    <versions>
+      <version>3.3-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20070613082815</lastUpdated>
+  </versioning>
+</metadata>

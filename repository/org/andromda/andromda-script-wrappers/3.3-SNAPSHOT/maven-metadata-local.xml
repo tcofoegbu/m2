@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+  <groupId>org.andromda</groupId>
+  <artifactId>andromda-script-wrappers</artifactId>
+  <version>3.3-SNAPSHOT</version>
+  <versioning>
+    <snapshot />
+    <lastUpdated>20070613083312</lastUpdated>
+  </versioning>
+</metadata>

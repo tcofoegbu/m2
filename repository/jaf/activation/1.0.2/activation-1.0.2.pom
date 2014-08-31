@@ -1,0 +1,19 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jaf</groupId>
+  <artifactId>activation</artifactId>
+  <version>1.0.2</version>
+  <name>JavaBeans Activation Framework</name>
+  <description>
+The javax.activation package. It is appropriate for inclusion in a classpath, and may be added to a Java 2 installation.
+  </description>
+  <url>http://java.sun.com/products/javabeans/glasgow/jaf.html</url>
+  <distributionManagement>
+    <downloadUrl>http://java.sun.com/products/javabeans/glasgow/jaf.html#download</downloadUrl>
+    <relocation>
+      <groupId>javax.activation</groupId>
+      <artifactId>activation</artifactId>
+      <version>1.0.2</version>
+    </relocation>
+  </distributionManagement>
+</project>

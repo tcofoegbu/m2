@@ -1,0 +1,148 @@
+<?xml version="1.0"?><project>
+  <parent>
+    <artifactId>animal-quiz</artifactId>
+    <groupId>org.andromda.samples.animalquiz</groupId>
+    <version>3.3-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>animal-quiz-app</artifactId>
+  <packaging>ear</packaging>
+  <name>AndroMDA Animal Quiz Sample Application</name>
+  <version>3.3-SNAPSHOT</version>
+  <build>
+    <resources>
+      <resource>
+        <targetPath>../</targetPath>
+        <filtering>true</filtering>
+        <directory>src/main/config</directory>
+      </resource>
+      <resource>
+        <targetPath>../${application.id}-3.3-SNAPSHOT</targetPath>
+        <filtering>true</filtering>
+        <directory>src/main/application</directory>
+      </resource>
+    </resources>
+    <finalName>${application.id}-3.3-SNAPSHOT</finalName>
+    <plugins>
+      <plugin>
+        <artifactId>maven-ear-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <includes>**/*.xml</includes>
+          <excludes>**/jboss-app.xml</excludes>
+          <version>1.4</version>
+          <modules>
+            <jarModule>
+              <groupId>${pom.groupId}</groupId>
+              <artifactId>animal-quiz-common</artifactId>
+              <includeInApplicationXml>true</includeInApplicationXml>
+            </jarModule>
+            <ejbModule>
+              <groupId>${pom.groupId}</groupId>
+              <artifactId>animal-quiz-core</artifactId>
+            </ejbModule>
+            <webModule>
+              <groupId>${pom.groupId}</groupId>
+              <artifactId>animal-quiz-web</artifactId>
+              <contextRoot>/${application.id}</contextRoot>
+            </webModule>
+            <webModule>
+              <groupId>${pom.groupId}</groupId>
+              <artifactId>animal-quiz-webservice</artifactId>
+              <contextRoot>/${application.id}-ws</contextRoot>
+            </webModule>
+          </modules>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>1.1</version>
+        <executions>
+          <execution>
+            <id>remove problem classes</id>
+            <phase>package</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <tasks>
+                <property refid="maven.runtime.classpath" name="dependencyClasspath"></property>
+                <taskdef classpath="${dependencyClasspath}" classname="com.tonicsystems.jarjar.JarJarTask" name="jarjar"></taskdef>
+                <copy file="${pom.basedir}/target/${pom.parent.artifactId}-3.3-SNAPSHOT/axis2-1.2.jar" tofile="${pom.basedir}/target/jarjar/axis2-1.2.jar"></copy>
+                <jarjar jarfile="${pom.basedir}/target/${pom.parent.artifactId}-3.3-SNAPSHOT/axis2-1.2.jar">
+                  <zipfileset src="${pom.basedir}/target/jarjar/axis2-1.2.jar"></zipfileset>
+                  <zap pattern="javax.xml.namespace.QName"></zap>
+                </jarjar>
+                <copy file="${pom.basedir}/target/${pom.parent.artifactId}-3.3-SNAPSHOT/stax-api-1.0.1.jar" tofile="${pom.basedir}/target/jarjar/stax-api-1.0.1.jar"></copy>
+                <jarjar jarfile="${pom.basedir}/target/${pom.parent.artifactId}-3.3-SNAPSHOT/stax-api-1.0.1.jar">
+                  <zipfileset src="${pom.basedir}/target/jarjar/stax-api-1.0.1.jar"></zipfileset>
+                  <zap pattern="javax.xml.namespace.QName"></zap>
+                </jarjar>
+                <copy file="${pom.basedir}/target/${pom.parent.artifactId}-3.3-SNAPSHOT/woden-1.0-incubating-M7a.jar" tofile="${pom.basedir}/target/jarjar/woden-1.0-incubating-M7a.jar"></copy>
+                <jarjar jarfile="${pom.basedir}/target/${pom.parent.artifactId}-3.3-SNAPSHOT/woden-1.0-incubating-M7a.jar">
+                  <zipfileset src="${pom.basedir}/target/jarjar/woden-1.0-incubating-M7a.jar"></zipfileset>
+                  <zap pattern="javax.xml.namespace.QName"></zap>
+                </jarjar>
+                <zip update="true" destfile="${pom.basedir}/target/${pom.parent.artifactId}-3.3-SNAPSHOT.ear" basedir="${pom.basedir}/target/${pom.parent.artifactId}-3.3-SNAPSHOT"></zip>
+              </tasks>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.andromda.maven.plugins</groupId>
+        <artifactId>andromdapp-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>deploy</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <deployLocation>${jboss.home}/server/default/deploy</deployLocation>
+          <includes>
+            <include>*ds.xml</include>
+          </includes>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>${pom.groupId}</groupId>
+      <artifactId>animal-quiz-common</artifactId>
+      <version>3.3-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>${pom.groupId}</groupId>
+      <artifactId>animal-quiz-core</artifactId>
+      <version>3.3-SNAPSHOT</version>
+      <type>ejb</type>
+    </dependency>
+    <dependency>
+      <groupId>${pom.groupId}</groupId>
+      <artifactId>animal-quiz-web</artifactId>
+      <version>3.3-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>${pom.groupId}</groupId>
+      <artifactId>animal-quiz-webservice</artifactId>
+      <version>3.3-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.tonicsystems</groupId>
+      <artifactId>jarjar</artifactId>
+      <version>0.6</version>
+    </dependency>
+  </dependencies>
+  <distributionManagement>
+    <status>deployed</status>
+  </distributionManagement>
+</project>

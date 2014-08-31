@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata>
+  <groupId>mondrian</groupId>
+  <artifactId>mondrian</artifactId>
+  <versioning>
+    <latest>2.3.2.8944-DB2</latest>
+    <release>2.3.2.8944-DB2</release>
+    <versions>
+      <version>2.3.2.8944-DB2</version>
+    </versions>
+  </versioning>
+</metadata>

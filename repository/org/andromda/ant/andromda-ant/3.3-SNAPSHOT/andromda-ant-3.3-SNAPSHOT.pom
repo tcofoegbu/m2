@@ -1,0 +1,22 @@
+<?xml version="1.0"?><project>
+  <parent>
+    <artifactId>andromda-ant-support</artifactId>
+    <groupId>org.andromda.ant</groupId>
+    <version>3.3-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>andromda-ant</artifactId>
+  <name>AndroMDA Ant Application Generator</name>
+  <version>3.3-SNAPSHOT</version>
+  <description>Provides generation of AndroMDA Ant based applications</description>
+  <dependencies>
+    <dependency>
+      <groupId>org.andromda.andromdapp</groupId>
+      <artifactId>andromda-andromdapp-core</artifactId>
+      <version>3.3-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+  <distributionManagement>
+    <status>deployed</status>
+  </distributionManagement>
+</project>

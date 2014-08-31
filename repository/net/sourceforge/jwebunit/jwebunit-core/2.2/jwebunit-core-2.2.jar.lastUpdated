@@ -1,0 +1,6 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Wed Dec 01 14:40:43 WAT 2010
+default-http\://repo1.maven.org/maven2/.lastUpdated=1291210835500
+http\://repo1.maven.org/maven2/.error=Could not transfer artifact net.sourceforge.jwebunit\:jwebunit-core\:jar\:2.2 from central (http\://repo1.maven.org/maven2)\: No response received after 60000
+http\://archiva.openqa.org/repository/releases/.lastUpdated=1291210843375
+http\://archiva.openqa.org/repository/releases/.error=

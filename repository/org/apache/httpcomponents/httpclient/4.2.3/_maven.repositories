@@ -1,0 +1,6 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Wed Jun 18 12:16:15 BST 2014
+httpclient-4.2.3.jar>central=
+httpclient-4.2.3.pom>central=
+httpclient-4.2.3.pom>apache-repo-releases=
+httpclient-4.2.3.jar>apache-repo-releases=

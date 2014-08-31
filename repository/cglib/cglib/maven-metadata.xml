@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata>
+  <groupId>cglib</groupId>
+  <artifactId>cglib</artifactId>
+  <versioning>
+    <latest>2.1_3</latest>
+    <release>2.1_3</release>
+    <versions>
+      <version>2.0.2</version>
+      <version>2.1_3</version>
+    </versions>
+  </versioning>
+</metadata>

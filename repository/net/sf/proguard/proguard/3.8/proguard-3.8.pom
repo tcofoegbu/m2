@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.sf.proguard</groupId>
+	<artifactId>proguard</artifactId>
+	<version>3.8</version>
+	<description>ProGuard is a free Java class file shrinker, optimizer, and obfuscator. It removes unused classes, fields, methods, and attributes. It then optimizes the bytecode. It then renames the remaining classes, fields, and methods using short meaningless names.</description>
+    <url>http://proguard.sourceforge.net/</url>
+    <packaging>jar</packaging>
+    <name>Proguard</name>
+    <scm>
+        <connection>scm:cvs:unknown</connection>
+    </scm>
+    <issueManagement>
+        <system>sf.net Tracker</system>
+        <url>http://sourceforge.net/tracker/?group_id=54750&amp;atid=474707</url>
+    </issueManagement>
+
+    <licenses>
+        <license>
+            <name>GNU General Public License (GPL)</name>
+			<url>http://proguard.sourceforge.net/GPL.html</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Eric Lafortune</name>
+            <id>lafortune</id>
+            <organization>Luciad</organization>
+            <organizationUrl>http://www.luciad.com/</organizationUrl>
+            <roles>
+                <role>Project admin and developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <dependencies>
+      <dependency>
+        <groupId>ant</groupId>
+        <artifactId>ant</artifactId>
+        <version>1.6.5</version>
+        <optional>true</optional>
+        <type>jar</type>
+      </dependency>
+      <dependency>
+        <groupId>com.sun.kvem</groupId>
+        <artifactId>kenv</artifactId>
+        <version>2.2</version>
+        <optional>true</optional>
+        <type>jar</type>
+      </dependency>
+    </dependencies>
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+    </build>
+</project>

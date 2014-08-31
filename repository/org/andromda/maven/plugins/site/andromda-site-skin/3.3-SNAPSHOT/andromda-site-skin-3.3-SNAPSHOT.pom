@@ -1,0 +1,15 @@
+<?xml version="1.0"?><project>
+  <parent>
+    <artifactId>andromda-site-plugins</artifactId>
+    <groupId>org.andromda.maven.plugins.site</groupId>
+    <version>3.3-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>andromda-site-skin</artifactId>
+  <name>AndroMDA Site Skin</name>
+  <version>3.3-SNAPSHOT</version>
+  <description>The AndroMDA site skin</description>
+  <distributionManagement>
+    <status>deployed</status>
+  </distributionManagement>
+</project>

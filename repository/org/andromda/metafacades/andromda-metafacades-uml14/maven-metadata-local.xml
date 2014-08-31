@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+  <groupId>org.andromda.metafacades</groupId>
+  <artifactId>andromda-metafacades-uml14</artifactId>
+  <version>3.3-SNAPSHOT</version>
+  <versioning>
+    <versions>
+      <version>3.3-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20070612223858</lastUpdated>
+  </versioning>
+</metadata>

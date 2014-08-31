@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+  <groupId>org.andromda.cartridges</groupId>
+  <artifactId>andromda-cartridges</artifactId>
+  <version>3.3-SNAPSHOT</version>
+  <versioning>
+    <snapshot />
+    <lastUpdated>20070612223806</lastUpdated>
+  </versioning>
+</metadata>

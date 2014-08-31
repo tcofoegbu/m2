@@ -1,0 +1,12 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>javax.persistence</groupId>
+  <artifactId>ejb</artifactId>
+  <version>3.0-public_review</version>
+  <url>http://www.jcp.org/en/jsr/detail?id=220</url>
+  
+  <distributionManagement>
+    <downloadUrl>http://prdownloads.sourceforge.net/hibernate/hibernate-annotations-3.1beta5.tar.gz?download</downloadUrl>
+  </distributionManagement>
+
+</project>

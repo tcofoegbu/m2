@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>net.sf.portletunit</groupId>
+    <artifactId>portletunit-portlet-archetype</artifactId>
+    <version>1.0.2</version>
+    <packaging>maven-archetype</packaging>
+    <name>portletunit-portlet-archetype</name>
+    <url>http://portletunit.sf.net/archetypes/portlet</url>
+    <description>
+        An archetype that creates a simple porltet with unit tests.
+    </description>
+    <scm>
+        <connection>scm:cvs:ext:m0smith@portletunit.cvs.sourceforge.net:/cvsroot/portletunit:portletunit2/archetypes/portlet</connection>
+        <developerConnection>scm:cvs:ext:m0smith@portletunit.cvs.sourceforge.net:/cvsroot/portletunit:portletunit2/archetypes/portlet</developerConnection>
+        <url>http://portletunit.cvs.sourceforge.net/viewvc/portletunit/portletunit2/archetypes/portlet/</url>
+    <tag>portletunit-portlet-archetype-1_0_2</tag>
+  </scm>
+    <developers>
+        <developer>
+            <id>m0smith</id>
+            <name>Matthew O. Smith</name>
+            <email>m0smith@users.sourceforge.net</email>
+            <url>http://www.software-ninja.com</url>
+        </developer>
+    </developers>
+
+    <mailingLists>
+        <mailingList>
+            <name>portletUnit User Mailing list</name>
+            <subscribe>http://lists.sourceforge.net/mailman/listinfo/porltetunit-users</subscribe>
+            <unsubscribe>http://lists.sourceforge.net/mailman/listinfo/portletunit-users</unsubscribe>
+            <archive>http://sourceforge.net/mailarchive/forum.php?forum_name=portletunit-users</archive>
+            <post>portletunit-users@lists.sourceforge.net</post>
+        </mailingList>
+    </mailingLists>
+    <issueManagement>
+        <system>sourceforge</system>
+        <url>http://sourceforge.net/tracker/?group_id=125370</url>
+    </issueManagement>
+    <licenses>
+        <license>
+            <name>Mozilla Public License 1.0 (MPL)</name>
+            <url>http://www.mozilla.org/MPL/MPL-1.0.html</url>
+            <distribution>repo</distribution>
+            <comments>The license is regarded as a weak copyleft. Specifically, source code copied or changed under the
+                MPL must stay under the MPL.
+                Unlike strong copyleft licenses, the code under the MPL may be combined in a program with proprietary
+                files which would otherwise be derivative works of the MPL code.
+            </comments>
+        </license>
+    </licenses>
+
+    <distributionManagement>
+        <site>
+            <id>sourceforge.net</id>
+            <url>scp://shell.sourceforge.net/home/groups/p/po/portletunit/htdocs/archetypes/portlet</url>
+        </site>
+       <repository>
+            <id>sonatype-nexus</id>
+            <name>Sonatype Nexus </name>
+            <url>http://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+        </repository>
+        <snapshotRepository>
+            <id>sonatype-nexus</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>http://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <profiles>
+        <profile>
+            <id>release-sign-artifacts</id>
+            <activation>
+                <property>
+                    <name>performRelease</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.0-alpha-4</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>frs</id>
+            <distributionManagement>
+                <site>
+                    <id>sourceforge.net</id>
+                    <url>scp://shell.sourceforge.net/home/groups/p/po/portletunit/htdocs/archetypes/portlet</url>
+                </site>
+                <repository>
+                    <id>sourceforge.net</id>
+                    <name>SourceForge</name>
+                    <url>sftp://frs.sourceforge.net:/home/frs/project/p/po/portletunit/releases
+                    </url>
+                </repository>
+                <snapshotRepository>
+                    <id>sourceforge.net</id>
+                    <name>SourceForge</name>
+                    <url>sftp://frs.sourceforge.net:/home/frs/project/p/po/portletunit/snapshots
+                    </url>
+                </snapshotRepository>
+
+            </distributionManagement>
+        </profile>
+    </profiles>
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.archetype</groupId>
+                <artifactId>archetype-packaging</artifactId>
+                <version>2.0-alpha-4</version>
+            </extension>
+        </extensions>
+        <plugins>
+            <plugin>
+                <artifactId>maven-archetype-plugin</artifactId>
+                <version>2.0-alpha-4</version>
+                <extensions>true</extensions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

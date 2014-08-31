@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: su-builder
+Build-Jdk: 1.5.0_07
+Extension-Name: andromda-hibernate-cartridge
+Specification-Title: Produces Hibernate entities optionally services i
+ mplemented as Session EJB facades.
+Specification-Vendor: AndroMDA.org
+Implementation-Vendor: AndroMDA.org
+Implementation-Title: andromda-hibernate-cartridge
+Implementation-Version: 3.3-SNAPSHOT
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>jmi</groupId>
+    <artifactId>jmiuml</artifactId>
+    <name>JMI UML 1.4 API</name>
+    <description>The generated JMI UML 1.4 API (Including the UML 2.0 diagram interchange)</description>
+    <packaging>jar</packaging>
+    <version>1.4di</version>
+    <scm>
+      <connection></connection>
+      <url></url>
+    </scm>
+</project>

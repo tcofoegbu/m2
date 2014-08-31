@@ -1,0 +1,14 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Jun 26 16:04:38 BST 2014
+http\://maven.ontotext.com/archiva/repository/internal/.error=Could not transfer artifact org.openrdf.sesame\:sesame-runtime\:pom\:2.3.1 from/to internal (http\://maven.ontotext.com/archiva/repository/internal)\: Connection to http\://192.168.130.55\:8081 refused
+http\://maven.ontotext.com/content/repositories/public/.error=
+@default-http\://maven.ontotext.com/archiva/repository/bigowl/.lastUpdated=1403795078148
+http\://repo.maven.apache.org/maven2/.lastUpdated=1403794868844
+http\://repo.maven.apache.org/maven2/.error=
+http\://maven.ontotext.com/archiva/repository/bigowl/.error=Could not transfer artifact org.openrdf.sesame\:sesame-runtime\:pom\:2.3.1 from/to bigowl (http\://maven.ontotext.com/archiva/repository/bigowl)\: Connection to http\://192.168.130.55\:8081 refused
+http\://maven.ontotext.com/content/repositories/public/.lastUpdated=1403794866958
+http\://topquadrant.com/repository/spin/.lastUpdated=1403794868789
+http\://topquadrant.com/repository/spin/.error=
+@default-http\://maven.ontotext.com/archiva/repository/internal/.lastUpdated=1403795057081
+default-http\://maven.ontotext.com/archiva/repository/internal/.lastUpdated=1403088494662
+default-http\://maven.ontotext.com/archiva/repository/bigowl/.lastUpdated=1403088504811

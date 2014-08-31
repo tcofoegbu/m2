@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+  <groupId>org.andromda.ant</groupId>
+  <artifactId>andromda-ant-task</artifactId>
+  <version>3.3-SNAPSHOT</version>
+  <versioning>
+    <versions>
+      <version>3.3-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20070612231334</lastUpdated>
+  </versioning>
+</metadata>

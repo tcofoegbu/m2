@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+  <groupId>org.andromda.repositories</groupId>
+  <artifactId>andromda-repositories</artifactId>
+  <version>3.3-SNAPSHOT</version>
+  <versioning>
+    <snapshot />
+    <lastUpdated>20070612223816</lastUpdated>
+  </versioning>
+</metadata>

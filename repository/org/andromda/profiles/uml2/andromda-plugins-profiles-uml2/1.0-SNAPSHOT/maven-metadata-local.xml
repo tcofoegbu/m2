@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+  <groupId>org.andromda.profiles.uml2</groupId>
+  <artifactId>andromda-plugins-profiles-uml2</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <localCopy>true</localCopy>
+    </snapshot>
+    <lastUpdated>20070613154434</lastUpdated>
+  </versioning>
+</metadata>

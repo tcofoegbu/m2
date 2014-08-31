@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>jmi</groupId>
+    <artifactId>modf</artifactId>
+    <name>JMI MOF API</name>
+    <description>The Java Metadata Interface (JMI) MOF Specification</description>
+    <packaging>jar</packaging>
+    <version>20030918</version>
+    <scm>
+      <connection></connection>
+      <url></url>
+    </scm>
+</project>

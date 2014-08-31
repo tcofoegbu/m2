@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata>
+  <groupId>eclipse</groupId>
+  <artifactId>jdtcore</artifactId>
+  <versioning>
+    <latest>3.2.0.v_658</latest>
+    <release>3.2.0.v_658</release>
+    <versions>
+      <version>2.1.0</version>
+      <version>3.0.1</version>
+      <version>3.1.0</version>
+      <version>3.2.0.v_658</version>
+    </versions>
+  </versioning>
+</metadata>

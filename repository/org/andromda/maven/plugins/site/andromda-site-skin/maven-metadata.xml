@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata>
+  <groupId>org.andromda.maven.plugins.site</groupId>
+  <artifactId>andromda-site-skin</artifactId>
+  <versioning>
+    <latest>3.3-SNAPSHOT</latest>
+    <versions>
+      <version>3.3-SNAPSHOT</version>
+    </versions>
+  </versioning>
+</metadata>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+  <groupId>org.andromda.profiles.uml14</groupId>
+  <artifactId>andromda-profile-xml</artifactId>
+  <version>3.3-SNAPSHOT</version>
+  <versioning>
+    <snapshot />
+    <lastUpdated>20070612222347</lastUpdated>
+  </versioning>
+</metadata>

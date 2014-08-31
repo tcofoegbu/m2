@@ -1,0 +1,4 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Wed Dec 01 14:40:29 WAT 2010
+default-http\://repo1.maven.org/maven2/.lastUpdated=1291210829953
+http\://repo1.maven.org/maven2/.error=Could not transfer artifact mysql\:mysql-connector-java\:jar\:5.1.10 from central (http\://repo1.maven.org/maven2)\: No response received after 60000

@@ -1,0 +1,290 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+
+	<groupId>at.molindo</groupId>
+	<artifactId>molindo-oss-pom</artifactId>
+	<version>1</version>
+	<packaging>pom</packaging>
+
+	<name>Molindo OSS POM</name>
+	<description>
+	  Base POM for Molindo OSS contributions
+	</description>
+	<url>http://github.com/molindo/molindo-oss-pom</url>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:git:git@github.com:molindo/molindo-oss-pom.git</connection>
+		<developerConnection>scm:git:git@github.com:molindo/molindo-oss-pom.git</developerConnection>
+		<url>git@github.com:molindo/molindo-oss-pom.git</url>
+	</scm>
+
+	<ciManagement>
+		<system>TeamCity</system>
+		<url>https://oss.molindo.at/</url>
+	</ciManagement>
+
+	<organization>
+		<name>Molindo GmbH</name>
+		<url>http://www.molindo.at/</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>sfussenegger</id>
+			<name>Stefan Fussenegger</name>
+			<email>stf+oss@molindo.at</email>
+			<timezone>-1</timezone>
+			<url>http://github.com/sfussenegger</url>
+		</developer>
+		<developer>
+			<id>msparer</id>
+			<name>Michael Sparer</name>
+			<email>msp+oss@molindo.at</email>
+			<timezone>-1</timezone>
+			<url>http://github.com/sfussenegger</url>
+		</developer>
+	</developers>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>at.molindo</groupId>
+				<artifactId>molindo-utils</artifactId>
+				<version>${molindo-utils.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>at.molindo.webtools</groupId>
+				<artifactId>molindo-crawler</artifactId>
+				<version>${molindo-crawler.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>at.molindo.webtools</groupId>
+				<artifactId>molindo-loganalyzer</artifactId>
+				<version>${molindo-loganalyzer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>at.molindo.webtools</groupId>
+				<artifactId>molindo-logreplay</artifactId>
+				<version>${molindo-logreplay.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>at.molindo</groupId>
+				<artifactId>molindo-notify</artifactId>
+				<version>${molindo-notify.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>at.molindo</groupId>
+				<artifactId>molindo-wicket-utils</artifactId>
+				<version>${molindo-wicket-utils.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.google.code.findbugs</groupId>
+				<artifactId>jsr305</artifactId>
+				<version>${findbugs.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.code.findbugs</groupId>
+				<artifactId>annotations</artifactId>
+				<version>${findbugs.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>${slf4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>jcl-over-slf4j</artifactId>
+				<version>${slf4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-log4j12</artifactId>
+				<version>${slf4j.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>log4j</groupId>
+				<artifactId>log4j</artifactId>
+				<version>${log4j.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- JUNIT DEPENDENCY FOR TESTING -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<resources>
+			<resource>
+				<filtering>false</filtering>
+				<directory>src/main/resources</directory>
+			</resource>
+			<resource>
+				<filtering>false</filtering>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**</include>
+				</includes>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+		</resources>
+		<testResources>
+			<testResource>
+				<filtering>false</filtering>
+				<directory>src/test/resources</directory>
+			</testResource>
+			<testResource>
+				<filtering>false</filtering>
+				<directory>src/test/java</directory>
+				<includes>
+					<include>**</include>
+				</includes>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</testResource>
+		</testResources>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<debugLevel>lines,vars</debugLevel>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<configuration>
+					<downloadSources>true</downloadSources>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>com.mycila.maven-license-plugin</groupId>
+				<artifactId>maven-license-plugin</artifactId>
+				<configuration>
+					<header>LICENSE</header>
+					<excludes>
+						<exclude>LICENSE</exclude>
+						<exclude>README</exclude>
+						<exclude>src/*/java/at/molindo/thirdparty/**</exclude>
+						<exclude>**/.gitignore</exclude>
+						<exclude>**/*.dtd</exclude>
+						<exclude>**/*.properties</exclude>
+						<exclude>src/test/**/*-expected.*</exclude>
+					</excludes>
+					<strictCheck>true</strictCheck>
+					<aggregate>true</aggregate>
+					<properties>
+						<year>2010</year>
+					</properties>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</reporting>
+
+	<properties>
+		<!-- by default, use most recent snapshot for dependency mgt -->
+		<molindo-utils.version>1.0-SNAPSHOT</molindo-utils.version>
+		<molindo-crawler.version>1.0-SNAPSHOT</molindo-crawler.version>
+		<molindo-loganalyzer.version>1.0-SNAPSHOT</molindo-loganalyzer.version>
+		<molindo-logreplay.version>1.0-SNAPSHOT</molindo-logreplay.version>
+		<molindo-notify.version>1.0-SNAPSHOT</molindo-notify.version>
+		<molindo-wicket-utils.version>1.0-SNAPSHOT</molindo-wicket-utils.version>
+
+		<slf4j.version>1.6.1</slf4j.version>
+		<log4j.version>1.2.16</log4j.version>
+		<findbugs.version>1.3.9</findbugs.version>
+		<junit.version>4.8.2</junit.version>
+	</properties>
+</project>

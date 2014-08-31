@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+  <groupId>org.andromda.maven.plugins</groupId>
+  <artifactId>andromda-configuration-mojo</artifactId>
+  <version>3.3-SNAPSHOT</version>
+  <versioning>
+    <versions>
+      <version>3.3-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20070612224730</lastUpdated>
+  </versioning>
+</metadata>

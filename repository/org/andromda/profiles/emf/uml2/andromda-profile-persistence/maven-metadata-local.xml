@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+  <groupId>org.andromda.profiles.emf.uml2</groupId>
+  <artifactId>andromda-profile-persistence</artifactId>
+  <version>3.3-SNAPSHOT</version>
+  <versioning>
+    <versions>
+      <version>3.3-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20070612231343</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,4 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Wed Dec 01 14:40:30 WAT 2010
+default-http\://repo1.maven.org/maven2/.lastUpdated=1291210830218
+http\://repo1.maven.org/maven2/.error=Could not transfer artifact opensymphony\:sitemesh\:jar\:2.4.2 from central (http\://repo1.maven.org/maven2)\: No response received after 60000

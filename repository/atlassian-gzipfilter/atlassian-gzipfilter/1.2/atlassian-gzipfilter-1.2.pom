@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>com.atlassian.pom</groupId>
+        <artifactId>atlassian-public-pom</artifactId>
+        <version>3</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.atlassian.gzipfilter</groupId>
+    <artifactId>atlassian-gzipfilter</artifactId>
+    <packaging>jar</packaging>
+    <version>1.2</version>
+    <name>atlassian-gzipfilter</name>
+    <!--<url>http://maven.apache.org</url>-->
+    <scm>
+        <connection>scm:svn:https://svn.atlassian.com/svn/public/atlassian/atlassian-gzipfilter/tags/atlassian-gzipfilter-1.2</connection>
+        <developerConnection>scm:svn:https://svn.atlassian.com/svn/public/atlassian/atlassian-gzipfilter/tags/atlassian-gzipfilter-1.2</developerConnection>
+        <url>https://svn.atlassian.com/fisheye/browse/public/atlassian/atlassian-gzipfilter/tags/atlassian-gzipfilter-1.2</url>
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.3</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- this dependency is used to calculate which urls to include.  Ideally I'd like to get rid of it -->
+        <dependency>
+            <groupId>net.java.dev.urlrewrite</groupId>
+            <artifactId>urlrewrite</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.8</version>
+        </dependency>
+
+
+        <!-- test dependencies -->
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>mockobjects</groupId>
+            <artifactId>mockobjects-core</artifactId>
+            <version>0.09</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>mockobjects</groupId>
+            <artifactId>mockobjects</artifactId>
+            <version>0.07-j1.3-j2ee1.3</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+</project>

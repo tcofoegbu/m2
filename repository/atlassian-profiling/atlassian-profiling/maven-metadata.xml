@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata>
+  <groupId>atlassian-profiling</groupId>
+  <artifactId>atlassian-profiling</artifactId>
+  <versioning>
+    <latest>1.1.4</latest>
+    <release>1.1.4</release>
+    <versions>
+      <version>1.1.4</version>
+    </versions>
+  </versioning>
+</metadata>

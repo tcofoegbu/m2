@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.andromda.maven.plugins</groupId>
+  <artifactId>andromdapp-maven-plugin</artifactId>
+  <version>3.3</version>
+  <versioning>
+    <latest>3.3</latest>
+  </versioning>
+</metadata>

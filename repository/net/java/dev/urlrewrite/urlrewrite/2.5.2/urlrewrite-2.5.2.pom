@@ -1,0 +1,17 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.java.dev.urlrewrite</groupId>
+  <artifactId>urlrewrite</artifactId>
+  <version>2.5.2</version>
+  <packaging>jar</packaging>
+  <name>UrlRewriteFilter</name>
+  <url>http://www.tuckey.org/urlrewrite</url>
+  <distributionManagement>
+    <relocation>
+      <groupId>org.tuckey</groupId>
+      <artifactId>urlrewrite</artifactId>
+      <version>2.5.2</version>
+    </relocation>
+  </distributionManagement>
+</project> 
+

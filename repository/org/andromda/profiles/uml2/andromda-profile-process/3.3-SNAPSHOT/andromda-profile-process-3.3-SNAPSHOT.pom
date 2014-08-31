@@ -1,0 +1,15 @@
+<?xml version="1.0"?><project>
+  <parent>
+    <artifactId>andromda-profiles-uml2</artifactId>
+    <groupId>org.andromda.profiles.uml2</groupId>
+    <version>3.3-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>andromda-profile-process</artifactId>
+  <packaging>xml.zip</packaging>
+  <name>AndroMDA UML 2.0 Process Profile</name>
+  <version>3.3-SNAPSHOT</version>
+  <distributionManagement>
+    <status>deployed</status>
+  </distributionManagement>
+</project>

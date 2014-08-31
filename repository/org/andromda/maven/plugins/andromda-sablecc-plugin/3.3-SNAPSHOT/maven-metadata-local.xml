@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+  <groupId>org.andromda.maven.plugins</groupId>
+  <artifactId>andromda-sablecc-plugin</artifactId>
+  <version>3.3-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <localCopy>true</localCopy>
+    </snapshot>
+    <lastUpdated>20070612222454</lastUpdated>
+  </versioning>
+</metadata>

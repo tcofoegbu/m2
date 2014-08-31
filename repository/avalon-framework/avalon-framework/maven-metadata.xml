@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata>
+  <groupId>avalon-framework</groupId>
+  <artifactId>avalon-framework</artifactId>
+  <versioning>
+    <latest>4.1.3</latest>
+    <release>4.1.3</release>
+    <versions>
+      <version>cvs-20020806</version>
+      <version>4.0</version>
+      <version>4.1.3</version>
+    </versions>
+  </versioning>
+</metadata>

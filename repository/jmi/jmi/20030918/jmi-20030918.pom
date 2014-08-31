@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>jmi</groupId>
+    <artifactId>jmi</artifactId>
+    <name>JMI API</name>
+    <description>JSR 40: The JavaTM Metadata Interface (JMI) Specification</description>
+    <packaging>jar</packaging>
+    <version>20030918</version>
+    <scm>
+      <connection></connection>
+      <url></url>
+    </scm>
+</project>

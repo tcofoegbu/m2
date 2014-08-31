@@ -1,0 +1,13 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Fri Jan 10 03:35:50 GMT 2014
+http\://dtp-82.sncs.abdn.ac.uk\:8081/archiva/repository/internal/.lastUpdated=1389324822523
+http\://download.java.net/maven/2/.lastUpdated=1389324886524
+http\://repository.jboss.org/nexus/content/groups/public/.lastUpdated=1389324950946
+https\://repository.apache.org/content/repositories/snapshots/.error=
+https\://repository.apache.org/content/repositories/releases/.lastUpdated=1389324844193
+https\://repository.apache.org/content/repositories/snapshots/.lastUpdated=1389324908274
+http\://download.java.net/maven/2/.error=
+http\://dtp-82.sncs.abdn.ac.uk\:8081/archiva/repository/internal/.error=
+https\://repository.apache.org/content/repositories/releases/.error=
+http\://repo1.maven.org/maven2/.error=
+http\://repo1.maven.org/maven2/.lastUpdated=1389324865257

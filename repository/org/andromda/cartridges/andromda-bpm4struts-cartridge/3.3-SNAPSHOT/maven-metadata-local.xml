@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+  <groupId>org.andromda.cartridges</groupId>
+  <artifactId>andromda-bpm4struts-cartridge</artifactId>
+  <version>3.3-SNAPSHOT</version>
+  <versioning>
+    <snapshot />
+    <lastUpdated>20070613092024</lastUpdated>
+  </versioning>
+</metadata>

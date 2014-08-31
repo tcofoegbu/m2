@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: scar
+Build-Jdk: 1.5.0
+Extension-Name: andromda-ejb3-cartridge
+Specification-Title: Produces EJB 3.0 persistence layer from a model.
+Specification-Vendor: AndroMDA.org
+Implementation-Vendor: AndroMDA.org
+Implementation-Title: andromda-ejb3-cartridge
+Implementation-Version: 1.0-SNAPSHOT
+

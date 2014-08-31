@@ -1,0 +1,9 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>javax.ejb</groupId>
+  <artifactId>ejb</artifactId>
+  <version>2.1</version>
+  <distributionManagement>
+    <downloadUrl>http://java.sun.com/products/ejb/docs.html</downloadUrl>
+  </distributionManagement>
+</project>

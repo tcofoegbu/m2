@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata>
+  <groupId>atlassian-trackback</groupId>
+  <artifactId>atlassian-trackback</artifactId>
+  <versioning>
+    <latest>2007-01-25</latest>
+    <release>2007-01-25</release>
+    <versions>
+      <version>2007-01-25</version>
+    </versions>
+  </versioning>
+</metadata>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata>
+  <groupId>ch.ethz.ganymed</groupId>
+  <artifactId>ganymed-ssh2</artifactId>
+  <versioning>
+    <latest>build210</latest>
+    <release>build210</release>
+    <versions>
+      <version>build210</version>
+    </versions>
+  </versioning>
+</metadata>
